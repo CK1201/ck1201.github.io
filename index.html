@@ -8,38 +8,35 @@
     <meta name="author" content="Chengkai Wu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table class="page-shell" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <td class="intro-cell" style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
-                  Chengkai Wu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;吴程锴
+                  <span class="name-main">Chengkai Wu</span>
+                  <span class="name-sub">（吴程锴）</span>
                 </p>
                 <p>
                   I am currently pursuing a Ph.D. at <a href="https://www.hkust-gz.edu.cn/" target="_blank">The Hong Kong University of Science and Technology (Guangzhou)</a>, 
                   under the supervision of Prof. <a href="https://scholar.google.com/citations?user=-fnyGY4AAAAJ" target="_blank">Boyu Zhou</a> and Prof. <a href="https://scholar.google.com/citations?user=8VepsVAAAAAJ&hl" target="_blank">Jun Ma</a> since February 2025. 
                   Prior to this, I completed my Master's degree in Automation at <a href="http://en.hitsz.edu.cn" target="_blank">Harbin Institute of Technology, Shenzhen</a> (2022-2024)
                   under the advisement of <a href="https://scholar.google.com/citations?user=tyQm5IkAAAAJ&hl" target="_blank">Jie Mei</a>. 
-                  I also received my B.Eng. in Electronic Information Engineering from <a href="http://english.ee.xidian.edu.cn/index.html" target="_blank">Xidian University</a> in 2022.
-                  </p>
-
-                  <p>
-                  Since January 2023, I have concurrently served as a visiting researcher at 
-                  <a href="https://robotics-star.com/" target="_blank">STAR Group</a> 
-                  supervised by <a href="https://scholar.google.com/citations?user=-fnyGY4AAAAJ" target="_blank">Boyu Zhou</a>.
-                  </p>
+                  I also received my B.Eng. in Electronic Information Engineering from <a href="https://en.xidian.edu.cn/" target="_blank">Xidian University</a> in 2022.
+                </p>
                 <!-- <p>
                   <font color="red"><strong>I am actively seeking PhD opportunities in robotics, with a special focus on motion planning, commencing in Spring 2025.</strong></font>
                 </p> -->
-                <p style="text-align:center">
+                <p class="intro-links" style="text-align:center">
                   <a href="mailto:chengkaiwuu@gmail.com" target="_blank">Email</a>
                   &nbsp;/&nbsp; <a href="files/Chengkai_CV.pdf" target="_blank">CV</a>
                   <!-- &nbsp;/&nbsp; <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
@@ -59,8 +56,8 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+              <td class="section-heading-cell" style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Publications</h2>
                 
                 <p>
                   I'm interested in motion planning, and mobile manipulation.
@@ -68,16 +65,16 @@
                   Representative papers are <span class="highlight">highlighted</span>.
                 </p>
 
-                <p style="font-size: 14px"> * indicates equal contribution</p>
+                <p class="section-note">* indicates equal contribution</p>
               </td>
             </tr>
           </tbody></table>
 
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="card-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
-            <tr onmouseout="autograsp_stop()" onmouseover="autograsp_start()"  bgcolor="#ffffd0">
-                <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr class="entry-card highlight-entry" onmouseout="autograsp_stop()" onmouseover="autograsp_start()">
+                <td class="entry-media-cell" style="padding:20px;width:25%;vertical-align:middle">
                     <div class="one">
                     <div class="two" id='autograsp_image'><video  width=100% muted autoplay loop>
                     <source src="images/autograsp.gif" type="video/mp4">
@@ -96,44 +93,38 @@
                     autograsp_stop()
                     </script>
                 </td>
-                <td style="padding:20px;width:75%;vertical-align:top">
-                    <a href="https://chengkaiwu.me">
-                    <img src="images/new.png" alt="[NEW]" width="5%" style="border-style: none">
-                    <span class="papertitle">Synergizing Efficiency and Reliability for Continuous Mobile Manipulation</span>
-                    </a>
-                    <br>
-                    <strong>Chengkai Wu</strong>,
-                    <a href="https://scholar.google.com/citations?user=rSiK6R8AAAAJ" target="_blank">Ruilin Wang*</a>,
-                    <a href="https://exinwww.github.io/Yixin_Zeng/" target="_blank">Yixin Zeng*</a>,
-                    <a href="https://chengkaiwu.me">Jiayuan Wang</a>,
-                    <a href="https://zager-zhang.github.io/" target="_blank">Mingjie Zhang</a>,
-                    <a href="https://gy920.github.io/" target="_blank">Guiyong Zheng</a>,
-                    <a href="https://niuqun.github.io/" target="_blank">Qun Niu</a>,
-                    <a href="https://scholar.google.com/citations?user=xrb-A3kAAAAJ&hl" target="_blank">Juepeng Zheng</a>,
-                    <a href="https://scholar.google.com/citations?user=8VepsVAAAAAJ&hl" target="_blank">Jun Ma</a>,
-                    <a href="https://scholar.google.com/citations?user=-fnyGY4AAAAJ&hl" target="_blank">Boyu Zhou</a>
-                    <br>
-                    In Submission
-                    <br>
-                    <!-- <a href="https://www.bilibili.com/video/BV1gm421N7hg" target="_blank" style="color:red">Oral</a> 
-                    / <a href="https://ieeexplore.ieee.org/xpl/conhome/1000639/all-proceedings/popular" target="_blank" style="color:red">Popular Rank 14 (July 2025)</a>
-                    <br> -->
-                    <!-- <a href="https://sysu-star.github.io/REMANI-Planner/" target="_blank">project page</a>
-                    / -->
-                    <a href="https://www.bilibili.com/video/BV1YWP4zxEQD" target="_blank">video</a>
-                    <!-- / <a href="https://ieeexplore.ieee.org/document/10610192" target="_blank">paper</a> -->
-                    <!-- / <a href="https://arxiv.org/abs/2504.14478" target="_blank">arXiv</a> -->
-                    <!-- / <a href="https://github.com/SYSU-STAR/REMANI-Planner" target="_blank">code</a> -->
-                    <p></p>
-                    <p>
-                    A unified framework that synergizes efficiency and reliability for continuous mobile manipulation.
+                <td class="entry-content-cell" style="padding:20px;width:75%;vertical-align:top">
+                    <div class="entry-title">
+                      <a href="https://chengkaiwu.me">
+                        <span class="entry-badge">NEW</span>
+                        <span class="papertitle">Synergizing Efficiency and Reliability for Continuous Mobile Manipulation</span>
+                      </a>
+                    </div>
+                    <div class="entry-authors">
+                      <strong>Chengkai Wu</strong>,
+                      <a href="https://scholar.google.com/citations?user=rSiK6R8AAAAJ" target="_blank">Ruilin Wang*</a>,
+                      <a href="https://exinwww.github.io/Yixin_Zeng/" target="_blank">Yixin Zeng*</a>,
+                      <a href="https://chengkaiwu.me">Jiayuan Wang</a>,
+                      <a href="https://zager-zhang.github.io/" target="_blank">Mingjie Zhang</a>,
+                      <a href="https://gy920.github.io/" target="_blank">Guiyong Zheng</a>,
+                      <a href="https://niuqun.github.io/" target="_blank">Qun Niu</a>,
+                      <a href="https://scholar.google.com/citations?user=xrb-A3kAAAAJ&hl" target="_blank">Juepeng Zheng</a>,
+                      <a href="https://scholar.google.com/citations?user=8VepsVAAAAAJ&hl" target="_blank">Jun Ma</a>,
+                      <a href="https://scholar.google.com/citations?user=-fnyGY4AAAAJ&hl" target="_blank">Boyu Zhou</a>
+                    </div>
+                    <div class="entry-venue">In Submission</div>
+                    <div class="entry-links">
+                      <a href="https://www.bilibili.com/video/BV1YWP4zxEQD" target="_blank">video</a>
+                    </div>
+                    <p class="entry-summary">
+                      A unified framework that synergizes efficiency and reliability for continuous mobile manipulation.
                     </p>
                 </td>
             </tr>
             
             
-            <tr onmouseout="apex_nav_stop()" onmouseover="apex_nav_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr class="entry-card" onmouseout="apex_nav_stop()" onmouseover="apex_nav_start()">
+              <td class="entry-media-cell" style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='apex_nav_image'><video  width=100% muted autoplay loop>
                   <source src="images/apex_nav.gif" type="video/mp4">
@@ -152,40 +143,37 @@
                   apex_nav_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="https://robotics-star.com/ApexNav/" target="_blank">
-                  <!-- <img src="images/new.png" alt="[NEW]" width="5%" style="border-style: none"> -->
-                  <span class="papertitle">ApexNav: An Adaptive Exploration Strategy for Zero-Shot Object Navigation with Target-centric Semantic Fusion</span>
-                </a>
-                <br>
-                <a href="https://zager-zhang.github.io" target="_blank">Mingjie Zhang</a>,
-                <a href="https://personal.hkust-gz.edu.cn/junma/people-page.html" target="_blank">Yuheng Du</a>,
-                <strong>Chengkai Wu</strong>,
-                <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/ZHOU-Jinni/eejinni" target="_blank">Jinni Zhou</a>,
-                <a href="https://chengkaiwu.me">Zhenchao Qi</a>,
-                <a href="https://personal.hkust-gz.edu.cn/junma/people-page.html" target="_blank">Jun Ma</a>,
-                <a href="https://scholar.google.com/citations?user=-fnyGY4AAAAJ&hl" target="_blank">Boyu Zhou</a>
-                <br>
-                <em>2025 IEEE Robotics and Automation Letters</em> (RAL 2025)
-                <br>
-                <a href="https://robotics-star.com/ApexNav" target="_blank">project page</a>
-                /
-                <a href="https://www.bilibili.com/video/BV1zvFieREM5" target="_blank">video</a>
-                /
-                <a href="https://arxiv.org/abs/2504.14478" target="_blank">arXiv</a>
-                /
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11150727" target="_blank">paper</a>
-                /
-                <a href="https://github.com/SYSU-STAR/ApexNav" target="_blank">code</a>
-                <p></p>
-                <p>
+              <td class="entry-content-cell" style="padding:20px;width:75%;vertical-align:top">
+                <div class="entry-title">
+                  <a href="https://robotics-star.com/ApexNav/" target="_blank">
+                    <span class="papertitle">ApexNav: An Adaptive Exploration Strategy for Zero-Shot Object Navigation with Target-centric Semantic Fusion</span>
+                  </a>
+                </div>
+                <div class="entry-authors">
+                  <a href="https://zager-zhang.github.io" target="_blank">Mingjie Zhang</a>,
+                  <a href="https://personal.hkust-gz.edu.cn/junma/people-page.html" target="_blank">Yuheng Du</a>,
+                  <strong>Chengkai Wu</strong>,
+                  <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/ZHOU-Jinni/eejinni" target="_blank">Jinni Zhou</a>,
+                  <a href="https://chengkaiwu.me">Zhenchao Qi</a>,
+                  <a href="https://personal.hkust-gz.edu.cn/junma/people-page.html" target="_blank">Jun Ma</a>,
+                  <a href="https://scholar.google.com/citations?user=-fnyGY4AAAAJ&hl" target="_blank">Boyu Zhou</a>
+                </div>
+                <div class="entry-venue"><em>2025 IEEE Robotics and Automation Letters</em> (RAL 2025)</div>
+                <div class="entry-links">
+                  <a href="https://robotics-star.com/ApexNav" target="_blank">project page</a>
+                  <a href="https://www.bilibili.com/video/BV1zvFieREM5" target="_blank">video</a>
+                  <a href="https://arxiv.org/abs/2504.14478" target="_blank">arXiv</a>
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11150727" target="_blank">paper</a>
+                  <a href="https://github.com/SYSU-STAR/ApexNav" target="_blank">code</a>
+                </div>
+                <p class="entry-summary">
                   A zero-shot object navigation framework that is both more efficient and reliable.
                 </p>
               </td>
             </tr> 
 
-            <tr onmouseout="fermi_stop()" onmouseover="fermi_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr class="entry-card" onmouseout="fermi_stop()" onmouseover="fermi_start()">
+              <td class="entry-media-cell" style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='fermi_image'><video  width=100% muted autoplay loop>
                   <source src="images/fermi.jpg" type="video/mp4">
@@ -204,35 +192,30 @@
                   fermi_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="https://github.com/ymLuo1214/Flexible-Radio-Mapping" target="_blank">
-                  <!-- <img src="images/new.png" alt="[NEW]" width="5%" style="border-style: none"> -->
-                  <span class="papertitle">FERMI: Flexible Radio Mapping with a Hybrid Propagation Model and Scalable Autonomous Data Collection</span>
-                </a>
-                <br>
-                <a href="https://github.com/ymLuo1214" target="_blank">Yiming Luo</a>,
-                <a href="https://personal.hkust-gz.edu.cn/junma/people-page.html" target="_blank">Yunfei Wang</a>,
-                <a href="https://github.com/Xiaodao-chen" target="_blank">Hongming Chen</a>,
-                <strong>Chengkai Wu</strong>,
-                <a href="https://scholar.google.com/citations?hl=en&user=obB-btEAAAAJ" target="_blank">Ximin Lyu</a>,
-                <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/ZHOU-Jinni/eejinni" target="_blank">Jinni Zhou</a>,
-                <a href="https://personal.hkust-gz.edu.cn/junma/people-page.html" target="_blank">Jun Ma</a>,
-                <a href="https://scholar.google.com/citations?hl=en&user=V-eYCF8AAAAJ" target="_blank">Fu Zhang</a>,
-                <a href="https://scholar.google.com/citations?user=-fnyGY4AAAAJ&hl" target="_blank">Boyu Zhou</a>
-                <br>
-                <em>2025 Robotics: Science and Systems</em> (RSS 2025)
-                <br>
-                <!-- <a href="https://pratulsrinivasan.github.io/fermi/">project page</a>
-                / -->
-                <!-- <a href="https://www.bilibili.com/video/BV1Qz421Z75Q/">video</a> -->
-                <!-- / -->
-                <a href="https://arxiv.org/abs/2504.14862" target="_blank">arXiv</a>
-                /
-                <a href="https://www.roboticsproceedings.org/rss21/p095.pdf" target="_blank">paper</a>
-                /
-                <a href="https://github.com/ymLuo1214/Flexible-Radio-Mapping" target="_blank">code</a>
-                <p></p>
-                <p>
+              <td class="entry-content-cell" style="padding:20px;width:75%;vertical-align:top">
+                <div class="entry-title">
+                  <a href="https://github.com/ymLuo1214/Flexible-Radio-Mapping" target="_blank">
+                    <span class="papertitle">FERMI: Flexible Radio Mapping with a Hybrid Propagation Model and Scalable Autonomous Data Collection</span>
+                  </a>
+                </div>
+                <div class="entry-authors">
+                  <a href="https://ymluo1214.github.io/" target="_blank">Yiming Luo</a>,
+                  <a href="https://personal.hkust-gz.edu.cn/junma/people-page.html" target="_blank">Yunfei Wang</a>,
+                  <a href="https://github.com/Xiaodao-chen" target="_blank">Hongming Chen</a>,
+                  <strong>Chengkai Wu</strong>,
+                  <a href="https://scholar.google.com/citations?hl=en&user=obB-btEAAAAJ" target="_blank">Ximin Lyu</a>,
+                  <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/ZHOU-Jinni/eejinni" target="_blank">Jinni Zhou</a>,
+                  <a href="https://personal.hkust-gz.edu.cn/junma/people-page.html" target="_blank">Jun Ma</a>,
+                  <a href="https://scholar.google.com/citations?hl=en&user=V-eYCF8AAAAJ" target="_blank">Fu Zhang</a>,
+                  <a href="https://scholar.google.com/citations?user=-fnyGY4AAAAJ&hl" target="_blank">Boyu Zhou</a>
+                </div>
+                <div class="entry-venue"><em>2025 Robotics: Science and Systems</em> (RSS 2025)</div>
+                <div class="entry-links">
+                  <a href="https://arxiv.org/abs/2504.14862" target="_blank">arXiv</a>
+                  <a href="https://www.roboticsproceedings.org/rss21/p095.pdf" target="_blank">paper</a>
+                  <a href="https://github.com/ymLuo1214/Flexible-Radio-Mapping" target="_blank">code</a>
+                </div>
+                <p class="entry-summary">
                   A flexible radio mapping framework.
                 </p>
               </td>
@@ -320,8 +303,8 @@
               </td>
             </tr>  -->
 
-            <tr onmouseout="remani_stop()" onmouseover="remani_start()"  bgcolor="#ffffd0">
-                <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr class="entry-card highlight-entry" onmouseout="remani_stop()" onmouseover="remani_start()">
+                <td class="entry-media-cell" style="padding:20px;width:25%;vertical-align:middle">
                     <div class="one">
                     <div class="two" id='remani_image'><video  width=100% muted autoplay loop>
                     <source src="images/remani.gif" type="video/mp4">
@@ -340,38 +323,36 @@
                     remani_stop()
                     </script>
                 </td>
-                <td style="padding:20px;width:75%;vertical-align:top">
-                    <a href="https://sysu-star.github.io/REMANI-Planner/" target="_blank">
-                    <!-- <img src="images/oral.png" alt="[ORAL]" width="5%" style="border-style: none"> -->
-                    <span class="papertitle">Real-time Whole-body Motion Planning for Mobile Manipulators Using Environment-adaptive Search and Spatial-temporal Optimization</span>
-                    </a>
-                    <br>
-                    <strong>Chengkai Wu</strong>*,
-                    <a href="https://scholar.google.com/citations?user=rSiK6R8AAAAJ" target="_blank">Ruilin Wang*</a>,
-                    <a href="https://robotics-star.com/people" target="_blank">Mianzhi Song</a>,
-                    <a href="https://scholar.google.com/citations?user=4RObDv0AAAAJ&hl" target="_blank">Fei Gao</a>,
-                    <a href="https://scholar.google.com/citations?user=tyQm5IkAAAAJ&hl" target="_blank">Jie Mei</a>,
-                    <a href="https://scholar.google.com/citations?user=-fnyGY4AAAAJ&hl" target="_blank">Boyu Zhou</a>
-                    <br>
-                    <em>2024 IEEE International Conference on Robotics and Automation</em> (ICRA 2024) 
-                    <br>
-                    <a href="https://www.bilibili.com/video/BV1gm421N7hg" target="_blank" style="color:red">Oral</a> 
-                    / <a href="https://ieeexplore.ieee.org/xpl/conhome/1000639/all-proceedings/popular" target="_blank" style="color:red">Popular paper - Rank 14 (July 2025)</a>
-                    <br>
-                    <a href="https://sysu-star.github.io/REMANI-Planner/" target="_blank">project page</a>
-                    /
-                    <a href="https://www.bilibili.com/video/BV1gm421N7hg" target="_blank">oral video</a>
-                    /
-                    <a href="https://www.youtube.com/watch?v=iYdAEZ3z11s" target="_blank">video</a>
-                    /
-                    <a href="https://ieeexplore.ieee.org/document/10610192" target="_blank">paper</a>
-                    /
-                    <a href="https://github.com/SYSU-STAR/REMANI-Planner" target="_blank">code</a>
-                    <p></p>
-                    <p>
-                    A motion planning method capable of generating high-quality, safe, agile and feasible trajectories for mobile manipulators in real time. 
-                    <br> <strong>This is how my story begins.</strong>
+                <td class="entry-content-cell" style="padding:20px;width:75%;vertical-align:top">
+                    <div class="entry-title">
+                      <a href="https://sysu-star.github.io/REMANI-Planner/" target="_blank">
+                        <span class="papertitle">Real-time Whole-body Motion Planning for Mobile Manipulators Using Environment-adaptive Search and Spatial-temporal Optimization</span>
+                      </a>
+                    </div>
+                    <div class="entry-authors">
+                      <strong>Chengkai Wu</strong>*,
+                      <a href="https://scholar.google.com/citations?user=rSiK6R8AAAAJ" target="_blank">Ruilin Wang*</a>,
+                      <a href="https://robotics-star.com/people" target="_blank">Mianzhi Song</a>,
+                      <a href="https://scholar.google.com/citations?user=4RObDv0AAAAJ&hl" target="_blank">Fei Gao</a>,
+                      <a href="https://scholar.google.com/citations?user=tyQm5IkAAAAJ&hl" target="_blank">Jie Mei</a>,
+                      <a href="https://scholar.google.com/citations?user=-fnyGY4AAAAJ&hl" target="_blank">Boyu Zhou</a>
+                    </div>
+                    <div class="entry-venue"><em>2024 IEEE International Conference on Robotics and Automation</em> (ICRA 2024)</div>
+                    <div class="entry-links">
+                      <a class="accent-link" href="https://www.bilibili.com/video/BV1gm421N7hg" target="_blank">Oral</a>
+                      <a class="accent-link" href="https://ieeexplore.ieee.org/xpl/conhome/1000639/all-proceedings/popular" target="_blank">Popular paper - Rank 14 (July 2025)</a>
+                    </div>
+                    <div class="entry-links">
+                      <a href="https://sysu-star.github.io/REMANI-Planner/" target="_blank">project page</a>
+                      <a href="https://www.bilibili.com/video/BV1gm421N7hg" target="_blank">oral video</a>
+                      <a href="https://www.youtube.com/watch?v=iYdAEZ3z11s" target="_blank">video</a>
+                      <a href="https://ieeexplore.ieee.org/document/10610192" target="_blank">paper</a>
+                      <a href="https://github.com/SYSU-STAR/REMANI-Planner" target="_blank">code</a>
+                    </div>
+                    <p class="entry-summary">
+                      A motion planning method capable of generating high-quality, safe, agile and feasible trajectories for mobile manipulators in real time.
                     </p>
+                    <p class="entry-note"><strong>This is how my story begins.</strong></p>
                 </td>
             </tr>
 
@@ -379,16 +360,16 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
+              <td class="section-heading-cell" style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Projects</h2>
               </td>
             </tr>
           </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="card-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr onmouseout="agcpt_stop()" onmouseover="agcpt_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <!-- <tr class="entry-card" onmouseout="agcpt_stop()" onmouseover="agcpt_start()">
+              <td class="entry-media-cell" style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='agcpt_image'><video  width=100% muted autoplay loop>
                   <source src="images/agcpt.gif" type="video/mp4">
@@ -407,21 +388,23 @@
                   agcpt_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="https://chengkaiwu.me">
-                  <span class="papertitle">Air-Ground Coordinated Patrol and Tracking</span>
-                </a>
-                <br>
-                Yiming Luo, Mingjie Zhang, <strong>Chengkai Wu</strong>, Boyu Zhou
-                <br>
-                <p>
+              <td class="entry-content-cell" style="padding:20px;width:75%;vertical-align:top">
+                <div class="entry-title">
+                  <a href="https://chengkaiwu.me">
+                    <span class="papertitle">Air-Ground Coordinated Patrol and Tracking</span>
+                  </a>
+                </div>
+                <div class="entry-meta">
+                  Yiming Luo, Mingjie Zhang, <strong>Chengkai Wu</strong>, Boyu Zhou
+                </div>
+                <p class="entry-summary">
                   Traversable map generation and yaw-constrained trajectory optimization for quadrotors.
                 </p>
               </td>
-            </tr> 
+            </tr>  -->
 
-            <tr onmouseout="rmua2024_stop()" onmouseover="rmua2024_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr class="entry-card" onmouseout="rmua2024_stop()" onmouseover="rmua2024_start()">
+              <td class="entry-media-cell" style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='rmua2024_image'><video  width=100% muted autoplay loop>
                   <source src="images/rmua2024.gif" type="video/mp4">
@@ -440,23 +423,24 @@
                   rmua2024_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="https://www.robomaster.com/en-US" target="_blank">
-                  <span class="papertitle">DJI RoboMaster 2023-2024 University AI Challenge Competition - Classic</span>
-                </a>
-                <br>
-                <strong>Third Place</strong>
-                <br>
-                Chenxin Yu, Yuhao Fang, Zihong Lu, Xinlu Yan, <strong>Chengkai Wu(Co-Advisor)</strong>, Jie Mei
-                <br>
-                <p>
+              <td class="entry-content-cell" style="padding:20px;width:75%;vertical-align:top">
+                <div class="entry-title">
+                  <a href="https://www.robomaster.com/en-US" target="_blank">
+                    <span class="papertitle">DJI RoboMaster 2023-2024 University AI Challenge Competition - Classic</span>
+                  </a>
+                </div>
+                <div class="entry-venue"><strong>Third Place</strong></div>
+                <div class="entry-meta">
+                  Chenxin Yu, Yuhao Fang, Zihong Lu, Xinlu Yan, <strong>Chengkai Wu(Co-Advisor)</strong>, Jie Mei
+                </div>
+                <p class="entry-summary">
                   A perception, planning and control framework for autonomous drone racing using stereo camera.
                 </p>
               </td>
             </tr> 
 
-            <tr onmouseout="rmua2022_stop()" onmouseover="rmua2022_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr class="entry-card" onmouseout="rmua2022_stop()" onmouseover="rmua2022_start()">
+              <td class="entry-media-cell" style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='rmua2022_image'><video  width=100% muted autoplay loop>
                   <source src="images/rmua2022.gif" type="video/mp4">
@@ -475,16 +459,17 @@
                   rmua2022_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="https://www.robomaster.com/en-US" target="_blank">
-                  <span class="papertitle">DJI RoboMaster 2022-2023 University AI Challenge Competition</span>
-                </a>
-                <br>
-                <strong>Second Place</strong>
-                <br>
-                <strong>Chengkai Wu(Team Leader)</strong>, Zihan Gu, Aoqi Li, Jiangyuan Yue, Muqi Li, Guangyang Li, Lihong Li, Feng Tu, Jie Mei
-                <br>
-                <p>
+              <td class="entry-content-cell" style="padding:20px;width:75%;vertical-align:top">
+                <div class="entry-title">
+                  <a href="https://www.robomaster.com/en-US" target="_blank">
+                    <span class="papertitle">DJI RoboMaster 2022-2023 University AI Challenge Competition</span>
+                  </a>
+                </div>
+                <div class="entry-venue"><strong>Second Place</strong></div>
+                <div class="entry-meta">
+                  <strong>Chengkai Wu(Team Leader)</strong>, Zihan Gu, Aoqi Li, Jiangyuan Yue, Muqi Li, Guangyang Li, Lihong Li, Feng Tu, Jie Mei
+                </div>
+                <p class="entry-summary">
                   A perception, planning and control framework for autonomous drone racing using stereo camera.
                 </p>
               </td>
@@ -497,56 +482,60 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
+                <td class="section-heading-cell" style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Teaching</h2>
                 </td>
               </tr>
             </tbody>
           </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/Calculus.png' width=100%>
+          <table class="card-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr class="entry-card entry-compact">
+              <td class="entry-media-cell" style="padding:20px;width:25%;vertical-align:middle">
+                <div class="entry-image-frame">
+                  <img src='images/Calculus.png' alt="Calculus II course">
+                </div>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-challenge-camp" target="_blank">
-                  <span class="papertitle">UFUG1103 - Calculus II (Spring 2026)</span>
-                </a>
-                <br>
-                <strong>Teaching Assistant</strong>
-                <br>
-                <p>
+              <td class="entry-content-cell" style="padding:20px;width:75%;vertical-align:top">
+                <div class="entry-title">
+                  <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-challenge-camp" target="_blank">
+                    <span class="papertitle">UFUG1103 - Calculus II (Spring 2026)</span>
+                  </a>
+                </div>
+                <div class="entry-venue"><strong>Teaching Assistant</strong></div>
+                <p class="entry-summary">
                   This course is the second in a year-long introductory sequence in one-variable calculus for first-year undergraduates. Topics include integrals, numerical methods, applications, and infinite series.
-
                 </p>
               </td>
             </tr>
             
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/RBCC.jpg' width=100%>
+            <tr class="entry-card entry-compact">
+              <td class="entry-media-cell" style="padding:20px;width:25%;vertical-align:middle">
+                <div class="entry-image-frame">
+                  <img src='images/RBCC.jpg' alt="RBCC teaching camp">
+                </div>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-challenge-camp" target="_blank">
-                  <span class="papertitle">RBCC Phase 3 - Red Bird Challenge Camp (Summer 2025)</span>
-                </a>
-                <br>
-                <strong>Teaching Assistant</strong>
-                <br>
-                <a href="https://chengkaiwu.me">Siqi Cai</a>,
-                <a href="https://github.com/UandUfindU" target="_blank">Yangyang Feng</a>,
-                <a href="https://github.com/Zhihan-Guo7" target="_blank">Zhihan Guo</a>,
-                <a href="https://chengkaiwu.me">Jiahe Guang</a>,
-                <a href="https://github.com/Saxon" target="_blank">Shixiong Zhou</a>,
-                <a href="https://chengkaiwu.me">Yawen Lai</a>,
-                <a href="https://github.com/LandyLee-gdut" target="_blank">Langdi Li</a>,
-                <a href="https://github.com/Rhyme3" target="_blank">Chengjun Ma</a>,
-                <a href="https://github.com/syjyy" target="_blank">Jingyi Yao</a>,
-                <a href="https://chengkaiwu.me">Zhenyue Zhang</a>,
-                <strong>Chengkai Wu(TA)</strong>
-                <br>
-                <p>
+              <td class="entry-content-cell" style="padding:20px;width:75%;vertical-align:top">
+                <div class="entry-title">
+                  <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-challenge-camp" target="_blank">
+                    <span class="papertitle">RBCC Phase 3 - Red Bird Challenge Camp (Summer 2025)</span>
+                  </a>
+                </div>
+                <div class="entry-venue"><strong>Teaching Assistant</strong></div>
+                <div class="entry-meta">
+                  <a href="https://chengkaiwu.me">Siqi Cai</a>,
+                  <a href="https://github.com/UandUfindU" target="_blank">Yangyang Feng</a>,
+                  <a href="https://github.com/Zhihan-Guo7" target="_blank">Zhihan Guo</a>,
+                  <a href="https://chengkaiwu.me">Jiahe Guang</a>,
+                  <a href="https://github.com/Saxon" target="_blank">Shixiong Zhou</a>,
+                  <a href="https://chengkaiwu.me">Yawen Lai</a>,
+                  <a href="https://github.com/LandyLee-gdut" target="_blank">Langdi Li</a>,
+                  <a href="https://github.com/Rhyme3" target="_blank">Chengjun Ma</a>,
+                  <a href="https://github.com/syjyy" target="_blank">Jingyi Yao</a>,
+                  <a href="https://chengkaiwu.me">Zhenyue Zhang</a>,
+                  <strong>Chengkai Wu(TA)</strong>
+                </div>
+                <p class="entry-summary">
                   The Red Bird Challenge Camp (RBCC) is an innovative teaching through practice activity, aims to cultivate the comprehensive ability of college students.
                 </p>
               </td>
@@ -556,7 +545,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
+                <td class="section-heading-cell" style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Reviewer</h2>
                 </td>
               </tr>
@@ -565,38 +554,9 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/TASE.png' width=100%>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856" target="_blank">
-                  <span class="papertitle">IEEE Transactions on Automation Science and Engineering (T-ASE)</span>
-                </a>
-                <br>
-                <!-- <strong>Reviewer for main article</strong>
-                <br> -->
-                <p>
-                  The IEEE Transactions on Automation Science and Engineering (T-ASE) publishes fundamental papers on Automation, emphasizing scientific results that advance efficiency, quality, productivity, and reliability.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/ICRA.png' width=100%>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="https://ieeexplore.ieee.org/xpl/conhome/1000639/all-proceedings" target="_blank">
-                  <span class="papertitle">IEEE International Conference on Robotics and Automation (ICRA)</span>
-                </a>
-                <br>
-                <!-- <strong>Reviewer for main article</strong>
-                <br> -->
-                <p>
-                  ICRA brings together the world's top researchers and industry leaders to share ideas, exchange knowledge, and advance the field of robotics.
-                </p>
+              <td style="padding:0 20px 20px 20px;width:100%;vertical-align:middle">
+                <p><strong>Conference Reviewer:</strong> ICRA</p>
+                <p><strong>Journal Reviewer:</strong> T-ASE</p>
               </td>
             </tr>
           </tbody></table>
@@ -615,8 +575,6 @@
           <!-- <p style="text-align: center;">
             <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=dlTwSAggzXVvNCoGJTECTelASXony7uJUdtxe5GCQJE"></script>
           </p> -->
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
