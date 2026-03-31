@@ -362,6 +362,14 @@ table.card-list tr.highlight-entry td {
   aspect-ratio: 4 / 3;
 }
 
+.teaching-image-frame {
+  background: #ffffff;
+}
+
+.teaching-image-frame img {
+  object-fit: contain;
+}
+
 .two {
   width: 100%;
   height: 100%;
