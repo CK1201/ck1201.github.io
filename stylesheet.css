@@ -243,8 +243,26 @@ h2 {
   color: var(--title-color);
 }
 
+.intro-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  font-size: 13px;
+}
+
 .intro-links a {
+  display: inline-flex;
+  align-items: center;
   font-weight: 600;
+}
+
+.intro-links a + a::before,
+.entry-links a + a::before {
+  content: "/";
+  color: #bcc6d3;
+  margin-right: 12px;
 }
 
 span.highlight {
@@ -447,12 +465,6 @@ table.card-list tr.highlight-entry td {
   display: inline-flex;
   align-items: center;
   font-weight: 600;
-}
-
-.entry-links a + a::before {
-  content: "/";
-  color: #bcc6d3;
-  margin-right: 12px;
 }
 
 .entry-links + .entry-links {
