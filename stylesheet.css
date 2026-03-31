@@ -363,10 +363,16 @@ table.card-list tr.highlight-entry td {
 }
 
 .teaching-image-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: auto;
   background: #ffffff;
 }
 
 .teaching-image-frame img {
+  width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
