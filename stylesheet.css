@@ -371,13 +371,17 @@ table.card-list {
   border-spacing: 0 20px !important;
 }
 
+table.card-list tr.entry-card {
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
 table.card-list tr.entry-card td {
   background: var(--card-bg);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   transition:
-    transform 0.22s ease,
-    box-shadow 0.22s ease,
     border-color 0.22s ease,
     background-color 0.22s ease;
 }
@@ -385,19 +389,20 @@ table.card-list tr.entry-card td {
 table.card-list tr.entry-card td:first-child {
   border-left: 1px solid var(--border-color);
   border-radius: 24px 0 0 24px;
-  box-shadow: var(--shadow-soft);
 }
 
 table.card-list tr.entry-card td:last-child {
   border-right: 1px solid var(--border-color);
   border-radius: 0 24px 24px 0;
-  box-shadow: var(--shadow-soft);
+}
+
+table.card-list tr.entry-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong);
 }
 
 table.card-list tr.entry-card:hover td {
-  transform: translateY(-4px);
   border-color: rgba(15, 107, 255, 0.18);
-  box-shadow: var(--shadow-strong);
 }
 
 table.card-list tr.highlight-entry td {
@@ -426,7 +431,9 @@ table.card-list tr.highlight-entry td {
   border-radius: 18px;
   border: 0;
   background: transparent;
-  box-shadow: none;
+  box-shadow:
+    0 10px 24px rgba(15, 23, 42, 0.22),
+    0 3px 8px rgba(15, 23, 42, 0.14);
 }
 
 .one {
