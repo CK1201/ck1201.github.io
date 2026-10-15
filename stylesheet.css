@@ -477,7 +477,7 @@ table.card-list tr.highlight-entry td {
 
 .one {
   height: auto;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: auto;
 }
 
 .entry-image-frame {
@@ -510,7 +510,11 @@ table.card-list tr.highlight-entry td {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.one img {
+  height: auto;
 }
 
 .teaching-image-frame img {
